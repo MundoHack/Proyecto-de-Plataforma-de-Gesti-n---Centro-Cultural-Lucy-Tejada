@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lucy Tejada Cultural Center - Management Platform</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-white group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f3f4] px-10 py-3">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-[#111618]">
+<div class="size-4">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-[#111618] text-lg font-bold leading-tight tracking-[-0.015em]">Lucy Tejada Cultural Center</h2>
+</div>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAbigbPJnLNT3J-JIcWwFbu0wGXIl3J_QkCYSgqwn4PF8YsFZi8tux8iA10OcFVQCCOBiv6zqPL1SD2rOKWpPdPhxOvwoH9w2BOKMLfgcs4i2LMiTgGHrkQc80Ex6ncOtPekWRmQs8UQ-bHv1vtSEPtSbtkECF6wkCeeViX6dwT8_0heMVGYK05eRjMLohZ099vy-L3EL-hwDahBUqyNdwFcJioX2KIKNi93wkHt1IDFqFLcCNDgK9g3-5-mPhYbr2-7CnsGxKicaXJ");'></div>
+</div>
+</header>
+<div class="px-10 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="flex flex-wrap justify-between items-center gap-3 p-4">
+<p class="text-[#111618] text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">Dashboard</p>
+<button class="flex items-center justify-center gap-2 text-white bg-[#111618] rounded-lg px-4 py-2 h-10">
+<span class="material-symbols-outlined">add</span>
+<span>New Program</span>
+</button>
+</div>
+<div class="pb-3">
+<div class="flex border-b border-[#dbe2e6] px-4 gap-8">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-[#111618] text-[#111618] pb-[13px] pt-4" href="#">
+<p class="text-[#111618] text-sm font-bold leading-normal tracking-[0.015em]">Program Management</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#617c89] pb-[13px] pt-4" href="#">
+<p class="text-[#617c89] text-sm font-bold leading-normal tracking-[0.015em]">Group/Course Management</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#617c89] pb-[13px] pt-4" href="#">
+<p class="text-[#617c89] text-sm font-bold leading-normal tracking-[0.015em]">Educator Management</p>
+</a>
+</div>
+</div>
+<div class="px-4 py-3">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-[#617c89] flex border-none bg-[#f0f3f4] items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111618] focus:outline-0 focus:ring-0 border-none bg-[#f0f3f4] focus:border-none h-full placeholder:text-[#617c89] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Search programs..." value=""/>
+</div>
+</label>
+</div>
+<div class="flex flex-col p-4">
+<div class="border rounded-lg overflow-hidden border-[#dbe2e6]">
+<table class="w-full">
+<thead class="bg-[#f0f3f4] border-b border-[#dbe2e6]">
+<tr>
+<th class="px-4 py-3 text-left text-xs font-medium text-[#617c89] uppercase tracking-wider">Program Name</th>
+<th class="px-4 py-3 text-left text-xs font-medium text-[#617c89] uppercase tracking-wider">Description</th>
+<th class="px-4 py-3 text-left text-xs font-medium text-[#617c89] uppercase tracking-wider">Status</th>
+<th class="px-4 py-3 text-left text-xs font-medium text-[#617c89] uppercase tracking-wider">Actions</th>
+</tr>
+</thead>
+<tbody class="bg-white divide-y divide-[#dbe2e6]">
+<tr>
+<td class="px-4 py-4 whitespace-nowrap text-sm font-medium text-[#111618]">Curso de Pintura al Óleo</td>
+<td class="px-4 py-4 whitespace-normal text-sm text-[#617c89]">A comprehensive course on oil painting techniques.</td>
+<td class="px-4 py-4 whitespace-nowrap">
+<span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
+</td>
+<td class="px-4 py-4 whitespace-nowrap text-sm font-medium">
+<button class="text-[#111618] hover:text-[#007a7a]"><span class="material-symbols-outlined text-base">edit</span></button>
+<button class="text-[#111618] hover:text-red-600 ml-2"><span class="material-symbols-outlined text-base">toggle_off</span></button>
+</td>
+</tr>
+<tr>
+<td class="px-4 py-4 whitespace-nowrap text-sm font-medium text-[#111618]">Taller de Escultura</td>
+<td class="px-4 py-4 whitespace-normal text-sm text-[#617c89]">Hands-on sculpture workshop for all levels.</td>
+<td class="px-4 py-4 whitespace-nowrap">
+<span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
+</td>
+<td class="px-4 py-4 whitespace-nowrap text-sm font-medium">
+<button class="text-[#111618] hover:text-[#007a7a]"><span class="material-symbols-outlined text-base">edit</span></button>
+<button class="text-[#111618] hover:text-red-600 ml-2"><span class="material-symbols-outlined text-base">toggle_off</span></button>
+</td>
+</tr>
+<tr>
+<td class="px-4 py-4 whitespace-nowrap text-sm font-medium text-[#111618]">Seminario de Historia del Arte</td>
+<td class="px-4 py-4 whitespace-normal text-sm text-[#617c89]">An academic seminar on the history of art.</td>
+<td class="px-4 py-4 whitespace-nowrap">
+<span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">Inactive</span>
+</td>
+<td class="px-4 py-4 whitespace-nowrap text-sm font-medium">
+<button class="text-[#111618] hover:text-[#007a7a]"><span class="material-symbols-outlined text-base">edit</span></button>
+<button class="text-[#111618] hover:text-green-600 ml-2"><span class="material-symbols-outlined text-base">toggle_on</span></button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>

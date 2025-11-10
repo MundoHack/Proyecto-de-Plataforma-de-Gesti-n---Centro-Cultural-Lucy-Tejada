@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Evaluaciones Cualitativas</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-white group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f3f4] px-10 py-3">
+<div class="flex items-center gap-4 text-[#111618]">
+<div class="size-6 text-slate-800">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-[#111618] text-lg font-bold leading-tight tracking-[-0.015em]">Centro Cultural Lucy Tejada</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-[#617c89] text-sm font-medium leading-normal" href="#">Dashboard</a>
+<a class="text-[#111618] text-sm font-bold leading-normal" href="#">Programas</a>
+<a class="text-[#617c89] text-sm font-medium leading-normal" href="#">Educadores</a>
+<a class="text-[#617c89] text-sm font-medium leading-normal" href="#">Evaluaciones</a>
+<a class="text-[#617c89] text-sm font-medium leading-normal" href="#">Reportes</a>
+</div>
+<div class="flex gap-2">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f0f3f4] text-[#111618] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-[#111618]" style="font-size: 20px;">settings</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f0f3f4] text-[#111618] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-[#111618]" style="font-size: 20px;">notifications</span>
+</button>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDYYNScmw7JUNinXuJ6Hcu6JC3wa-s2G6uCXu5xPBJc-ylOFW5El5ZC4fgxmTTBouW_l51o2jIax1jtUabv445ZEXmXtSqeWnqHv7bI1Qqc92lsqi0Mc7aHJ1XXgpAwO8pF7SDdk-atj62PV4SKUELvroRVtvYrJ6cM1znFU2hwgtrHIV0v9p7n87V6wWVRl0xDJ9im25tXSOj7meEoeUDFRfrIGtsYpZx-OBk3ibCxY-r1bn1Jrr91pvXUrimfbqzmgFVe7jBGbtNc");'></div>
+</div>
+</header>
+<main class="p-10 flex flex-col gap-8">
+<div class="flex flex-wrap justify-between gap-3">
+<p class="text-[#111618] tracking-light text-[32px] font-bold leading-tight min-w-72">Evaluaciones Cualitativas de Programas</p>
+</div>
+<div class="flex max-w-[480px] flex-wrap items-end gap-4">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#111618] text-base font-medium leading-normal pb-2">Seleccionar Programa</p>
+<select class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111618] focus:outline-0 focus:ring-2 focus:ring-slate-300 border border-[#dbe2e6] bg-white h-14 placeholder:text-[#617c89] p-[15px] text-base font-normal leading-normal">
+<option value="ceramica">Taller de Cerámica Avanzada</option>
+<option value="coro">Coro Juvenil</option>
+<option value="pintura">Clases de Pintura al Óleo para Principiantes</option>
+</select>
+</label>
+</div>
+<div class="grid grid-cols-[40px_1fr] gap-x-4">
+<div class="flex flex-col items-center gap-2 pt-3">
+<span class="material-symbols-outlined text-[#111618]" style="font-size: 24px;">calendar_today</span>
+<div class="w-[1.5px] bg-[#dbe2e6] h-full"></div>
+</div>
+<div class="flex flex-1 flex-col pb-8">
+<p class="text-[#111618] text-base font-medium leading-normal">15 de Octubre de 2023</p>
+<p class="text-[#617c89] text-base font-normal leading-normal mt-1">
+                                    El progreso de los estudiantes ha sido notable, se observa gran entusiasmo y participación activa en las actividades propuestas. Se recomienda continuar con el enfoque práctico.
+                                </p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-[1.5px] bg-[#dbe2e6] h-full"></div>
+<span class="material-symbols-outlined text-[#111618]" style="font-size: 24px;">calendar_today</span>
+<div class="w-[1.5px] bg-[#dbe2e6] h-full"></div>
+</div>
+<div class="flex flex-1 flex-col pb-8">
+<p class="text-[#111618] text-base font-medium leading-normal">20 de Septiembre de 2023</p>
+<p class="text-[#617c89] text-base font-normal leading-normal mt-1">
+                                    Necesidad de mayor apoyo individualizado para algunos participantes. El grupo en general muestra buena dinámica, pero el aprendizaje es heterogéneo.
+                                </p>
+</div>
+</div>
+<!-- Empty State Example -->
+<div class="flex flex-col p-4 hidden">
+<div class="flex flex-col items-center gap-6 rounded-lg border-2 border-dashed border-[#dbe2e6] px-6 py-14">
+<div class="flex max-w-[480px] flex-col items-center gap-2">
+<p class="text-[#111618] text-lg font-bold leading-tight tracking-[-0.015em] max-w-[480px] text-center">No hay evaluaciones disponibles</p>
+<p class="text-[#617c89] text-sm font-normal leading-normal max-w-[480px] text-center">Aún no se han registrado evaluaciones para el programa seleccionado.</p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#111618] text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-slate-700 transition-colors">
+<span class="truncate">Añadir evaluación</span>
+</button>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body></html>

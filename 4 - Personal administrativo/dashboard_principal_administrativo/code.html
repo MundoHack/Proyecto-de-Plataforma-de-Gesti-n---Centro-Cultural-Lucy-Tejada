@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dashboard - Centro Cultural Lucy Tejada</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
+<div class="flex flex-row min-h-screen">
+<!-- SideNavBar -->
+<div class="flex flex-col w-64 bg-white border-r border-gray-200 p-4">
+<div class="flex items-center gap-3 mb-8">
+<div class="size-8 bg-black rounded-full flex items-center justify-center text-white">
+<svg class="size-5" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path></svg>
+</div>
+<h2 class="text-[#111618] text-lg font-bold leading-tight tracking-[-0.015em]">Centro Cultural</h2>
+</div>
+<div class="flex flex-col gap-2 flex-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-[#f0f3f4]" href="#">
+<span class="material-symbols-outlined text-[#111618]">home</span>
+<p class="text-[#111618] text-sm font-medium leading-normal">Inicio</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100" href="#">
+<span class="material-symbols-outlined text-[#111618]">book_4</span>
+<p class="text-[#111618] text-sm font-medium leading-normal">Programas</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100" href="#">
+<span class="material-symbols-outlined text-[#111618]">groups</span>
+<p class="text-[#111618] text-sm font-medium leading-normal">Estudiantes</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100" href="#">
+<span class="material-symbols-outlined text-[#111618]">calendar_today</span>
+<p class="text-[#111618] text-sm font-medium leading-normal">Eventos</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100" href="#">
+<span class="material-symbols-outlined text-[#111618]">bar_chart</span>
+<p class="text-[#111618] text-sm font-medium leading-normal">Reportes</p>
+</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100" href="#">
+<span class="material-symbols-outlined text-[#111618]">settings</span>
+<p class="text-[#111618] text-sm font-medium leading-normal">Configuración</p>
+</a>
+</div>
+</div>
+<!-- Main Content -->
+<div class="flex-1 flex flex-col">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f3f4] px-10 py-3 bg-white">
+<div class="flex items-center gap-4 text-[#111618]">
+<p class="text-[#111618] text-2xl font-black leading-tight tracking-[-0.033em]">Dashboard</p>
+</div>
+<div class="flex flex-1 justify-end gap-4">
+<label class="flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-[#617c89] flex border-none bg-[#f0f3f4] items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-lg text-[#111618] focus:outline-0 focus:ring-0 border-none bg-[#f0f3f4] h-full placeholder:text-[#617c89] px-4 text-base font-normal leading-normal" placeholder="Buscar..." value=""/>
+</div>
+</label>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f0f3f4] text-[#111618] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-[#111618]">notifications</span>
+</button>
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Avatar de usuario" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBYoVvZXApFl4ODITcsybq8gOd8f2bOKABLOIuT7hv_LJ4rhJdRE8VhHnEM4qULJjPp6rQLCY64w3nRZg_xwB-8S2sWNAgKl10oN4ZY0QlrH-H-kpp7_omyiqTkUKaHFNCWikW8h31DNu1-J1IQAU2PF4jg0QYXGCSLRW7fXjgC4CI3kMxYa1iwSCD26-DYfUx1UTlXjQ9cxKqiUynd_2IxudfrQddeUqzWgMBz1nTWKf4Cpg1E6Z1ODEXWCVqtQn8IZcXvRh9v0VpC");'></div>
+<div class="flex flex-col">
+<h1 class="text-[#111618] text-sm font-medium leading-normal">Hola, Nombre Usuario</h1>
+<p class="text-[#617c89] text-xs font-normal leading-normal">Admin</p>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1 p-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+<!-- Matrícula General Widget -->
+<div class="flex flex-col gap-4 rounded-lg border border-[#dbe2e6] p-6 bg-white col-span-1 lg:col-span-2">
+<p class="text-[#111618] text-base font-medium leading-normal">Matrícula General por Programa y Género</p>
+<div class="grid min-h-[240px] grid-flow-col gap-6 items-end justify-items-center px-3">
+<div class="flex flex-col items-center w-full">
+<div class="flex h-full w-full items-end gap-1">
+<div class="bg-[#2563eb] w-full" style="height: 60%;"></div>
+<div class="bg-[#93c5fd] w-full" style="height: 40%;"></div>
+</div>
+<p class="text-[#617c89] text-[13px] font-bold leading-normal tracking-[0.015em] mt-2">Danza</p>
+</div>
+<div class="flex flex-col items-center w-full">
+<div class="flex h-full w-full items-end gap-1">
+<div class="bg-[#2563eb] w-full" style="height: 80%;"></div>
+<div class="bg-[#93c5fd] w-full" style="height: 70%;"></div>
+</div>
+<p class="text-[#617c89] text-[13px] font-bold leading-normal tracking-[0.015em] mt-2">Música</p>
+</div>
+<div class="flex flex-col items-center w-full">
+<div class="flex h-full w-full items-end gap-1">
+<div class="bg-[#2563eb] w-full" style="height: 50%;"></div>
+<div class="bg-[#93c5fd] w-full" style="height: 90%;"></div>
+</div>
+<p class="text-[#617c89] text-[13px] font-bold leading-normal tracking-[0.015em] mt-2">Teatro</p>
+</div>
+<div class="flex flex-col items-center w-full">
+<div class="flex h-full w-full items-end gap-1">
+<div class="bg-[#2563eb] w-full" style="height: 75%;"></div>
+<div class="bg-[#93c5fd] w-full" style="height: 65%;"></div>
+</div>
+<p class="text-[#617c89] text-[13px] font-bold leading-normal tracking-[0.015em] mt-2">Artes Plásticas</p>
+</div>
+</div>
+<div class="flex justify-center items-center gap-4 text-sm mt-2">
+<div class="flex items-center gap-2"><div class="w-3 h-3 bg-[#2563eb]"></div><span>Masculino</span></div>
+<div class="flex items-center gap-2"><div class="w-3 h-3 bg-[#93c5fd]"></div><span>Femenino</span></div>
+</div>
+</div>
+<!-- Tasa de Deserción Widget -->
+<div class="bg-cover bg-center flex flex-col items-stretch justify-end rounded-lg shadow-[0_0_4px_rgba(0,0,0,0.1)] col-span-1" data-alt="Fondo abstracto con gradiente oscuro" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.1) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBK1dki56KU58dBZtZurvxTQET5U2hIfJ2aP6WBCABWj1igJ8qnU80F0AVBaBkuevBWcXXq-HA1ptyqA0CiqJwQ3wTIKHhOldVIuCjA0SN5a2YtEw04i54OQ5KAgtVYKWbseKOuC8uJEd53K2CMblC-3AKSPsv9kDfpOOFyWKwfHojay2fO7Sn2wBFnTEScIT6Y48qjGikW_UphA55WWjVsgRcxlH821Y-jq-e9a_MaR-7XiX9qNK38RGHdNO0OXGYpcj_tRtV48QNo");'>
+<div class="flex w-full flex-col gap-1 p-6 text-white">
+<p class="text-base font-medium leading-normal">Tasa de Deserción</p>
+<p class="text-5xl font-bold leading-tight">12</p>
+<div class="flex items-center gap-1 text-sm font-normal leading-normal text-red-400">
+<span class="material-symbols-outlined">arrow_upward</span>
+<span>5% vs. Periodo Anterior</span>
+</div>
+</div>
+</div>
+<!-- Asistencia Promedio Mensual Widget -->
+<div class="flex flex-col gap-2 rounded-lg border border-[#dbe2e6] p-6 bg-white col-span-1 lg:col-span-2">
+<p class="text-[#111618] text-base font-medium leading-normal">Asistencia Promedio Mensual</p>
+<div class="flex min-h-[180px] flex-1 flex-col gap-8 py-4">
+<svg fill="none" height="148" preserveaspectratio="none" viewbox="-3 0 478 150" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25V149H0V109Z" fill="url(#paint0_linear_1131_5935_asistencia)"></path>
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25" stroke="#2563eb" stroke-linecap="round" stroke-width="3"></path>
+<defs>
+<lineargradient gradientunits="userSpaceOnUse" id="paint0_linear_1131_5935_asistencia" x1="236" x2="236" y1="1" y2="149">
+<stop stop-color="#93c5fd"></stop>
+<stop offset="1" stop-color="#93c5fd" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+</svg>
+<div class="flex justify-around">
+<p class="text-[#617c89] text-[13px] font-bold leading-normal tracking-[0.015em]">Ene</p>
+<p class="text-[#617c89] text-[13px] font-bold leading-normal tracking-[0.015em]">Feb</p>
+<p class="text-[#617c89] text-[13px] font-bold leading-normal tracking-[0.015em]">Mar</p>
+<p class="text-[#617c89] text-[13px] font-bold leading-normal tracking-[0.015em]">Abr</p>
+<p class="text-[#617c89] text-[13px] font-bold leading-normal tracking-[0.015em]">May</p>
+<p class="text-[#617c89] text-[13px] font-bold leading-normal tracking-[0.015em]">Jun</p>
+</div>
+</div>
+</div>
+<!-- Origen de Estudiantes Widget -->
+<div class="flex flex-col gap-2 rounded-lg border border-[#dbe2e6] p-6 bg-white col-span-1">
+<p class="text-[#111618] text-base font-medium leading-normal">Origen de Estudiantes</p>
+<div class="flex justify-center items-center h-full min-h-[240px]">
+<img class="w-full h-auto object-contain" data-alt="Mapa de Pereira mostrando la distribución de estudiantes por barrio" data-location="Pereira" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5E4kHS5jsSAH7JnXRHJR4X4jVPwJAHcqIqDKDxk_oWbhFJOwpNh1TPQOsuLLn2H7sSJKdj62-_DI_aiymgNeFtb4B0uHMkNtJdzk5o3-V-Q8bvIoxiWE7JpUd_aLcNiZcOsm8V0uJatD-oan4O3jQUIosFQ-XTBIJ6S8y79Nk1y5e1p4tRzkBS6vMJGRPCbFgdGokWbv1b1CHFImrStQhVm7t8eGADKu1tzBl3GKIgbp3-9u3RFO7qJsRDVzzxCqd7dG2aW5hWnVG"/>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Centro Cultural Lucy Tejada - Registro de Educadores</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&amp;family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-[#111618]" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
+<div class="relative flex min-h-screen w-full flex-col items-center justify-center bg-white group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col w-full max-w-7xl">
+<div class="flex flex-1 justify-center py-10">
+<div class="layout-content-container flex flex-col w-full">
+<header class="flex items-center justify-center whitespace-nowrap px-10 py-3">
+<div class="flex items-center gap-4 text-[#1d2d35]">
+<div class="size-6">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="#1d2d35"></path>
+</svg>
+</div>
+<h2 class="text-[#1d2d35] text-xl font-bold leading-tight tracking-[-0.015em]">Centro Cultural Lucy Tejada</h2>
+</div>
+</header>
+<main class="flex flex-col gap-8 px-4 sm:px-6 lg:px-8 py-8 w-full">
+<div class="w-full max-w-4xl mx-auto">
+<div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+<div class="text-center mb-8">
+<h1 class="text-[#111618] tracking-light text-3xl font-bold leading-tight">Registro de Educadores</h1>
+<p class="text-gray-600 mt-2">Completa el formulario para unirte a nuestra comunidad de educadores.</p>
+</div>
+<form class="space-y-8">
+<section>
+<h2 class="text-xl font-semibold text-[#1d2d35] border-b pb-3 mb-6">Datos Personales</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-5">
+<div class="flex flex-col">
+<label class="text-[#111618] text-sm font-medium leading-normal pb-2" for="nombre">Nombre(s)</label>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111618] focus:outline-0 focus:ring-2 focus:ring-[#f59e0b] border border-[#dbe2e6] bg-white focus:border-[#dbe2e6] h-12 placeholder:text-[#617c89] px-4 text-base font-normal leading-normal" id="nombre" placeholder="Ingresa tu nombre" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="text-[#111618] text-sm font-medium leading-normal pb-2" for="apellidos">Apellido(s)</label>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111618] focus:outline-0 focus:ring-2 focus:ring-[#f59e0b] border border-[#dbe2e6] bg-white focus:border-[#dbe2e6] h-12 placeholder:text-[#617c89] px-4 text-base font-normal leading-normal" id="apellidos" placeholder="Ingresa tus apellidos" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="text-[#111618] text-sm font-medium leading-normal pb-2" for="tipo_documento">Tipo de Documento</label>
+<select class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111618] focus:outline-0 focus:ring-2 focus:ring-[#f59e0b] border border-[#dbe2e6] bg-white focus:border-[#dbe2e6] h-12 px-4 text-base font-normal leading-normal" id="tipo_documento">
+<option>Cédula de Ciudadanía</option>
+<option>Cédula de Extranjería</option>
+<option>Pasaporte</option>
+</select>
+</div>
+<div class="flex flex-col">
+<label class="text-[#111618] text-sm font-medium leading-normal pb-2" for="numero_documento">Número de Documento</label>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111618] focus:outline-0 focus:ring-2 focus:ring-[#f59e0b] border border-[#dbe2e6] bg-white focus:border-[#dbe2e6] h-12 placeholder:text-[#617c89] px-4 text-base font-normal leading-normal" id="numero_documento" placeholder="Ingresa tu número de documento" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="text-[#111618] text-sm font-medium leading-normal pb-2" for="fecha_nacimiento">Fecha de Nacimiento</label>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111618] focus:outline-0 focus:ring-2 focus:ring-[#f59e0b] border border-[#dbe2e6] bg-white focus:border-[#dbe2e6] h-12 placeholder:text-[#617c89] px-4 text-base font-normal leading-normal" id="fecha_nacimiento" type="date"/>
+</div>
+<div class="flex flex-col">
+<label class="text-[#111618] text-sm font-medium leading-normal pb-2" for="genero">Género</label>
+<select class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111618] focus:outline-0 focus:ring-2 focus:ring-[#f59e0b] border border-[#dbe2e6] bg-white focus:border-[#dbe2e6] h-12 px-4 text-base font-normal leading-normal" id="genero">
+<option>Femenino</option>
+<option>Masculino</option>
+<option>Otro</option>
+<option>Prefiero no decirlo</option>
+</select>
+</div>
+<div class="md:col-span-2 flex flex-col">
+<label class="text-[#111618] text-sm font-medium leading-normal pb-2" for="direccion">Dirección de Residencia</label>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111618] focus:outline-0 focus:ring-2 focus:ring-[#f59e0b] border border-[#dbe2e6] bg-white focus:border-[#dbe2e6] h-12 placeholder:text-[#617c89] px-4 text-base font-normal leading-normal" id="direccion" placeholder="Ej: Carrera 5 # 10-20" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="text-[#111618] text-sm font-medium leading-normal pb-2" for="ciudad">Ciudad</label>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111618] focus:outline-0 focus:ring-2 focus:ring-[#f59e0b] border border-[#dbe2e6] bg-white focus:border-[#dbe2e6] h-12 placeholder:text-[#617c89] px-4 text-base font-normal leading-normal" id="ciudad" placeholder="Ingresa tu ciudad" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="text-[#111618] text-sm font-medium leading-normal pb-2" for="telefono">Teléfono</label>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111618] focus:outline-0 focus:ring-2 focus:ring-[#f59e0b] border border-[#dbe2e6] bg-white focus:border-[#dbe2e6] h-12 placeholder:text-[#617c89] px-4 text-base font-normal leading-normal" id="telefono" placeholder="Ingresa tu número de teléfono" type="tel"/>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-xl font-semibold text-[#1d2d35] border-b pb-3 mb-6">Información Profesional</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-5">
+<div class="md:col-span-2 flex flex-col">
+<label class="text-[#111618] text-sm font-medium leading-normal pb-2" for="especializacion">Áreas de Especialización</label>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111618] focus:outline-0 focus:ring-2 focus:ring-[#f59e0b] border border-[#dbe2e6] bg-white focus:border-[#dbe2e6] h-12 placeholder:text-[#617c89] px-4 text-base font-normal leading-normal" id="especializacion" placeholder="Ej: Música, Danza, Artes Plásticas" type="text"/>
+</div>
+<div class="md:col-span-2 flex flex-col">
+<label class="text-[#111618] text-sm font-medium leading-normal pb-2" for="experiencia">Experiencia Profesional (Resumen)</label>
+<textarea class="form-textarea flex w-full min-w-0 flex-1 resize-y overflow-hidden rounded-lg text-[#111618] focus:outline-0 focus:ring-2 focus:ring-[#f59e0b] border border-[#dbe2e6] bg-white focus:border-[#dbe2e6] placeholder:text-[#617c89] p-4 text-base font-normal leading-normal" id="experiencia" placeholder="Describe brevemente tu experiencia como educador" rows="4"></textarea>
+</div>
+<div class="md:col-span-2 flex flex-col">
+<label class="text-[#111618] text-sm font-medium leading-normal pb-2" for="titulos">Títulos o Certificaciones</label>
+<textarea class="form-textarea flex w-full min-w-0 flex-1 resize-y overflow-hidden rounded-lg text-[#111618] focus:outline-0 focus:ring-2 focus:ring-[#f59e0b] border border-[#dbe2e6] bg-white focus:border-[#dbe2e6] placeholder:text-[#617c89] p-4 text-base font-normal leading-normal" id="titulos" placeholder="Lista tus títulos, diplomas o certificaciones relevantes" rows="3"></textarea>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-xl font-semibold text-[#1d2d35] border-b pb-3 mb-6">Credenciales de Acceso</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-5">
+<div class="flex flex-col">
+<label class="text-[#111618] text-sm font-medium leading-normal pb-2" for="email">Nombre de Usuario / Email</label>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111618] focus:outline-0 focus:ring-2 focus:ring-[#f59e0b] border border-[#dbe2e6] bg-white focus:border-[#dbe2e6] h-12 placeholder:text-[#617c89] px-4 text-base font-normal leading-normal" id="email" placeholder="tu@email.com" type="email"/>
+</div>
+<div></div>
+<div class="flex flex-col">
+<label class="text-[#111618] text-sm font-medium leading-normal pb-2" for="password">Contraseña</label>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111618] focus:outline-0 focus:ring-2 focus:ring-[#f59e0b] border border-[#dbe2e6] bg-white focus:border-[#dbe2e6] h-12 placeholder:text-[#617c89] px-4 text-base font-normal leading-normal" id="password" placeholder="Crea una contraseña segura" type="password"/>
+</div>
+<div class="flex flex-col">
+<label class="text-[#111618] text-sm font-medium leading-normal pb-2" for="password_confirm">Confirmar Contraseña</label>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111618] focus:outline-0 focus:ring-2 focus:ring-[#f59e0b] border border-[#dbe2e6] bg-white focus:border-[#dbe2e6] h-12 placeholder:text-[#617c89] px-4 text-base font-normal leading-normal" id="password_confirm" placeholder="Confirma tu contraseña" type="password"/>
+</div>
+</div>
+</section>
+<div class="pt-4">
+<button class="w-full bg-[#1d2d35] text-white h-14 rounded-lg text-base font-semibold hover:bg-[#2c424d] transition-colors" type="submit">Crear Cuenta de Educador</button>
+<p class="text-center text-sm text-gray-500 mt-4">¿Ya tienes una cuenta? <a class="font-medium text-[#1d2d35] hover:underline" href="#">Inicia sesión aquí</a></p>
+</div>
+</form>
+</div>
+</div>
+</main>
+</div>
+</div>
+<footer class="text-center py-4 text-sm text-gray-500 border-t border-gray-200">
+<p>© 2024 Centro Cultural Lucy Tejada. Todos los derechos reservados.</p>
+<p class="mt-1"><a class="underline hover:text-[#1d2d35]" href="#">Política de Privacidad</a> | <a class="underline hover:text-[#1d2d35]" href="#">Términos de Servicio</a></p>
+</footer>
+</div>
+</div>
+</body></html>

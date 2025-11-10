@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Plataforma de Gestión - Centro Cultural Lucy Tejada</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      font-family: "Public Sans", "Noto Sans", sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="flex flex-row min-h-screen">
+<!-- SideNavBar -->
+<div class="flex flex-col justify-between bg-white p-4 border-r border-gray-200 w-64 fixed h-full">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3 px-3 py-2">
+<span class="material-symbols-outlined text-[#111618] text-2xl">
+              local_florist
+            </span>
+<h2 class="text-[#111618] text-lg font-bold">Lucy Tejada</h2>
+</div>
+<div class="flex flex-col gap-2 mt-4">
+<div class="flex items-center gap-3 px-3 py-2">
+<span class="material-symbols-outlined text-[#617c89]">
+                dashboard
+              </span>
+<p class="text-[#617c89] text-sm font-medium">Dashboard</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2 rounded-lg bg-[#f0f3f4]">
+<span class="material-symbols-outlined text-[#111618]">
+                groups
+              </span>
+<p class="text-[#111618] text-sm font-medium">Mis Programas y Grupos</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2">
+<span class="material-symbols-outlined text-[#617c89]">
+                calendar_today
+              </span>
+<p class="text-[#617c89] text-sm font-medium">Calendario</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2">
+<span class="material-symbols-outlined text-[#617c89]">
+                assessment
+              </span>
+<p class="text-[#617c89] text-sm font-medium">Reportes</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex gap-3 items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Educator's profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDkzxYQ-6C_9zKII8cmhIAhtQ6-QM-Lvt3tpr6XVnSvY-L015juO8OCRMSfNgfUml8cR6mqjDXxwYJYs06RJj-ZqkPm5knENGq1LcWoggHcaPeSAXofsB5Sv1oOEaJ2orEE2E8zK2ecAF6xSEFjgxV3yd0XCBPaVVVWCildKEPttD4otQbRIxjDOTeI6DIEeJeL2Y_ILxJ7h8Ay-q_XlTt5eLT2ZaCNII75M0V7AUStK_hy2owxduUuHr1jgCgFduspIRJaTWht8qB7");'></div>
+<div class="flex flex-col">
+<h1 class="text-[#111618] text-base font-medium">Educador/a</h1>
+<p class="text-[#617c89] text-sm font-normal">¡Bienvenido/a!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-1 ml-64">
+<!-- TopNavBar -->
+<header class="flex items-center justify-end whitespace-nowrap border-b border-solid border-b-[#f0f3f4] px-10 py-3 bg-white">
+<div class="flex gap-2">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f0f3f4] text-[#111618] gap-2 text-sm font-bold min-w-0 px-2.5">
+<span class="material-symbols-outlined text-[#111618]">
+                settings
+              </span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#f0f3f4] text-[#111618] gap-2 text-sm font-bold min-w-0 px-2.5">
+<span class="material-symbols-outlined text-[#111618]">
+                person
+              </span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="p-10">
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between gap-3 mb-8">
+<p class="text-[#111618] text-4xl font-black tracking-[-0.033em] min-w-72">Mis Programas y Grupos</p>
+</div>
+<!-- Accordions for Programs -->
+<div class="flex flex-col gap-4">
+<details class="flex flex-col bg-white rounded-lg border border-[#dbe2e6] group" open="">
+<summary class="flex cursor-pointer items-center justify-between gap-6 p-4">
+<p class="text-[#111618] text-lg font-medium">Taller de Cerámica Avanzada</p>
+<span class="material-symbols-outlined text-[#111618] group-open:rotate-180 transition-transform">
+                  expand_more
+                </span>
+</summary>
+<div class="border-t border-t-[#dbe2e6] p-4 flex flex-col gap-4">
+<!-- ListItem for Group -->
+<div class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2 justify-between border border-gray-200 rounded-md">
+<div class="flex items-center gap-4">
+<div class="text-[#111618] flex items-center justify-center rounded-lg bg-[#f0f3f4] shrink-0 size-12">
+<span class="material-symbols-outlined">
+                        groups
+                      </span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-[#111618] text-base font-medium">Grupo Martes Tarde</p>
+<p class="text-[#617c89] text-sm font-normal">30 Estudiantes</p>
+</div>
+</div>
+<div class="flex gap-4 shrink-0">
+<button class="flex items-center gap-2 text-sm font-medium text-teal-600 hover:text-teal-700">
+<span class="material-symbols-outlined text-base">
+                        visibility
+                      </span> Ver Estudiantes
+                    </button>
+<button class="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-800">
+<span class="material-symbols-outlined text-base">
+                        checklist
+                      </span> Tomar Asistencia
+                    </button>
+</div>
+</div>
+<!-- ListItem for Group -->
+<div class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2 justify-between border border-gray-200 rounded-md">
+<div class="flex items-center gap-4">
+<div class="text-[#111618] flex items-center justify-center rounded-lg bg-[#f0f3f4] shrink-0 size-12">
+<span class="material-symbols-outlined">
+                        groups
+                      </span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-[#111618] text-base font-medium">Grupo Jueves Noche</p>
+<p class="text-[#617c89] text-sm font-normal">25 Estudiantes</p>
+</div>
+</div>
+<div class="flex gap-4 shrink-0">
+<button class="flex items-center gap-2 text-sm font-medium text-teal-600 hover:text-teal-700">
+<span class="material-symbols-outlined text-base">
+                        visibility
+                      </span> Ver Estudiantes
+                    </button>
+<button class="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-800">
+<span class="material-symbols-outlined text-base">
+                        checklist
+                      </span> Tomar Asistencia
+                    </button>
+</div>
+</div>
+</div>
+</details>
+<details class="flex flex-col bg-white rounded-lg border border-[#dbe2e6] group">
+<summary class="flex cursor-pointer items-center justify-between gap-6 p-4">
+<p class="text-[#111618] text-lg font-medium">Danza Contemporánea I</p>
+<span class="material-symbols-outlined text-[#111618] group-open:rotate-180 transition-transform">
+                  expand_more
+                </span>
+</summary>
+<div class="border-t border-t-[#dbe2e6] p-4 flex flex-col gap-4">
+<!-- ListItem for Group -->
+<div class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2 justify-between border border-gray-200 rounded-md">
+<div class="flex items-center gap-4">
+<div class="text-[#111618] flex items-center justify-center rounded-lg bg-[#f0f3f4] shrink-0 size-12">
+<span class="material-symbols-outlined">
+                        groups
+                      </span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-[#111618] text-base font-medium">Grupo Principiantes A</p>
+<p class="text-[#617c89] text-sm font-normal">18 Estudiantes</p>
+</div>
+</div>
+<div class="flex gap-4 shrink-0">
+<button class="flex items-center gap-2 text-sm font-medium text-teal-600 hover:text-teal-700">
+<span class="material-symbols-outlined text-base">
+                        visibility
+                      </span> Ver Estudiantes
+                    </button>
+<button class="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-gray-800">
+<span class="material-symbols-outlined text-base">
+                        checklist
+                      </span> Tomar Asistencia
+                    </button>
+</div>
+</div>
+</div>
+</details>
+<details class="flex flex-col bg-white rounded-lg border border-[#dbe2e6] group">
+<summary class="flex cursor-pointer items-center justify-between gap-6 p-4">
+<p class="text-[#111618] text-lg font-medium">Pintura al Óleo</p>
+<span class="material-symbols-outlined text-[#111618] group-open:rotate-180 transition-transform">
+                  expand_more
+                </span>
+</summary>
+<div class="border-t border-t-[#dbe2e6] p-4">
+<p class="text-gray-500 text-sm">No hay grupos asignados para este programa todavía.</p>
+</div>
+</details>
+</div>
+</main>
+</div>
+</div>
+</div>
+</body></html>

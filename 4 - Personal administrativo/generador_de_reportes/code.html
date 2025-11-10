@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Generación de Reportes</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-[#f8f9fa]">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f3f4] px-10 py-3 bg-white">
+<div class="flex items-center gap-4 text-[#111618]">
+<div class="size-8">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-[#111618] text-lg font-bold leading-tight tracking-[-0.015em]">Centro Cultural Lucy Tejada</h2>
+</div>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-[#f0f3f4] text-[#111618]">
+<span class="material-symbols-outlined">person</span>
+</button>
+</header>
+<div class="flex flex-1">
+<aside class="flex flex-col h-full bg-white p-4 w-64 border-r border-solid border-r-[#f0f3f4]">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAnqJOF2wokGsqQjZrCTMtU1VVzY3QFJfFmZeHxd4_m8nzhjKeFo3uJKEJUaaM58S3VT42ylsTYpg1kMMLZ9x2ayMeGv2C6xXZeHWO3A8HOVk3KC2Z4oUhaFLdZsyZl9b76fxO0XDjL-EF3pcA1cd5d-lIunAUwXuUVsm_lEo_YFNt5atd4Et7LZtvsUGQ5RajPYNb1OE29w1I57dBW1f9hGXuENVmzKDXIMyYtvqAC2_2kIJ5AK4Gm59R93R_UJ4V-Dca16NL4FTMW");'></div>
+<div class="flex flex-col">
+<h1 class="text-[#111618] text-base font-medium leading-normal">Nombre de Usuario</h1>
+<p class="text-[#617c89] text-sm font-normal leading-normal">Admin</p>
+</div>
+</div>
+<div class="flex flex-col gap-2 mt-4">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#f0f3f4]" href="#">
+<span class="material-symbols-outlined text-[#111618]">dashboard</span>
+<p class="text-[#111618] text-sm font-medium leading-normal">Dashboard</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#f0f3f4]" href="#">
+<span class="material-symbols-outlined text-[#111618]">folder</span>
+<p class="text-[#111618] text-sm font-medium leading-normal">Gestión</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#f0f3f4]" href="#">
+<span class="material-symbols-outlined text-[#111618]">calendar_today</span>
+<p class="text-[#111618] text-sm font-medium leading-normal">Eventos</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-[#f0f3f4]" href="#">
+<span class="material-symbols-outlined text-[#111618] font-bold">bar_chart</span>
+<p class="text-[#111618] text-sm font-medium leading-normal">Reportes</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#f0f3f4]" href="#">
+<span class="material-symbols-outlined text-[#111618]">settings</span>
+<p class="text-[#111618] text-sm font-medium leading-normal">Configuración</p>
+</a>
+</div>
+</div>
+</aside>
+<main class="flex-1 p-8">
+<div class="layout-content-container flex flex-col max-w-4xl mx-auto">
+<div class="flex flex-wrap justify-between gap-3 p-4 mb-6">
+<p class="text-[#111618] text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">Generación de Reportes Personalizados</p>
+</div>
+<div class="bg-white rounded-lg p-6 shadow-sm">
+<h2 class="text-[#111618] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-2">Tipo de Reporte</h2>
+<div class="flex flex-wrap gap-3 p-4">
+<label class="text-sm font-medium leading-normal flex items-center justify-center rounded-lg border border-[#dbe2e6] px-4 h-11 text-[#111618] has-[:checked]:border-2 has-[:checked]:px-[15px] has-[:checked]:border-[#13a4ec] relative cursor-pointer">
+                                    Asistencia
+                                    <input checked="" class="invisible absolute" name="report-type" type="radio"/>
+</label>
+<label class="text-sm font-medium leading-normal flex items-center justify-center rounded-lg border border-[#dbe2e6] px-4 h-11 text-[#111618] has-[:checked]:border-2 has-[:checked]:px-[15px] has-[:checked]:border-[#13a4ec] relative cursor-pointer">
+                                    Matrículas
+                                    <input class="invisible absolute" name="report-type" type="radio"/>
+</label>
+<label class="text-sm font-medium leading-normal flex items-center justify-center rounded-lg border border-[#dbe2e6] px-4 h-11 text-[#111618] has-[:checked]:border-2 has-[:checked]:px-[15px] has-[:checked]:border-[#13a4ec] relative cursor-pointer">
+                                    Evaluaciones
+                                    <input class="invisible absolute" name="report-type" type="radio"/>
+</label>
+<label class="text-sm font-medium leading-normal flex items-center justify-center rounded-lg border border-[#dbe2e6] px-4 h-11 text-[#111618] has-[:checked]:border-2 has-[:checked]:px-[15px] has-[:checked]:border-[#13a4ec] relative cursor-pointer">
+                                    Actividades
+                                    <input class="invisible absolute" name="report-type" type="radio"/>
+</label>
+<label class="text-sm font-medium leading-normal flex items-center justify-center rounded-lg border border-[#dbe2e6] px-4 h-11 text-[#111618] has-[:checked]:border-2 has-[:checked]:px-[15px] has-[:checked]:border-[#13a4ec] relative cursor-pointer">
+                                    Recursos
+                                    <input class="invisible absolute" name="report-type" type="radio"/>
+</label>
+<label class="text-sm font-medium leading-normal flex items-center justify-center rounded-lg border border-[#dbe2e6] px-4 h-11 text-[#111618] has-[:checked]:border-2 has-[:checked]:px-[15px] has-[:checked]:border-[#13a4ec] relative cursor-pointer">
+                                    Personal
+                                    <input class="invisible absolute" name="report-type" type="radio"/>
+</label>
+</div>
+<div class="border-t border-[#f0f3f4] my-4"></div>
+<h2 class="text-[#111618] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-2">Rango de Fechas</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-4">
+<div>
+<label class="block text-sm font-medium text-[#617c89] mb-1" for="start-date">Desde</label>
+<input class="w-full rounded-lg border border-[#dbe2e6] p-2 focus:ring-[#13a4ec] focus:border-[#13a4ec]" id="start-date" type="date"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-[#617c89] mb-1" for="end-date">Hasta</label>
+<input class="w-full rounded-lg border border-[#dbe2e6] p-2 focus:ring-[#13a4ec] focus:border-[#13a4ec]" id="end-date" type="date"/>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 p-4 pt-0">
+<button class="text-xs font-medium px-3 py-1 rounded-full bg-[#f0f3f4] text-[#111618] hover:bg-[#dbe2e6]">Últimos 7 días</button>
+<button class="text-xs font-medium px-3 py-1 rounded-full bg-[#f0f3f4] text-[#111618] hover:bg-[#dbe2e6]">Mes actual</button>
+<button class="text-xs font-medium px-3 py-1 rounded-full bg-[#f0f3f4] text-[#111618] hover:bg-[#dbe2e6]">Año actual</button>
+</div>
+<div class="border-t border-[#f0f3f4] my-4"></div>
+<h2 class="text-[#111618] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-2">Filtros Adicionales</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-4">
+<div>
+<label class="block text-sm font-medium text-[#617c89] mb-1" for="program-filter">Programa</label>
+<select class="w-full rounded-lg border border-[#dbe2e6] p-2 focus:ring-[#13a4ec] focus:border-[#13a4ec]" id="program-filter">
+<option>Todos los programas</option>
+<option>Artes Plásticas</option>
+<option>Música</option>
+<option>Danza</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-[#617c89] mb-1" for="instructor-filter">Instructor</label>
+<select class="w-full rounded-lg border border-[#dbe2e6] p-2 focus:ring-[#13a4ec] focus:border-[#13a4ec]" id="instructor-filter">
+<option>Todos los instructores</option>
+<option>Carlos Perez</option>
+<option>Maria Rodriguez</option>
+</select>
+</div>
+</div>
+<div class="border-t border-[#f0f3f4] my-4"></div>
+<h2 class="text-[#111618] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-2">Formato de Salida</h2>
+<div class="flex flex-wrap gap-4 p-4">
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="form-radio text-[#13a4ec] focus:ring-[#13a4ec]" name="output-format" type="radio"/>
+<span class="text-sm font-medium">PDF</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="form-radio text-[#13a4ec] focus:ring-[#13a4ec]" name="output-format" type="radio"/>
+<span class="text-sm font-medium">Excel (.xlsx)</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="form-radio text-[#13a4ec] focus:ring-[#13a4ec]" name="output-format" type="radio"/>
+<span class="text-sm font-medium">CSV</span>
+</label>
+</div>
+<div class="border-t border-[#f0f3f4] my-4"></div>
+<div class="flex justify-end gap-4 p-4">
+<button class="text-sm font-bold text-[#617c89] py-2 px-4 rounded-lg hover:bg-[#f0f3f4]">Limpiar Filtros</button>
+<button class="bg-[#13a4ec] text-white text-sm font-bold py-2.5 px-6 rounded-lg hover:bg-[#108ac9] flex items-center gap-2">
+<span class="material-symbols-outlined">download</span>
+                                    Generar Reporte
+                                </button>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+</body></html>
